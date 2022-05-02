@@ -390,7 +390,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6, p, span, a {
-  color: #ffffff;
+  color: #4C4C4C;
   margin: 0;
 }
 
@@ -443,6 +443,7 @@ h1, h2, h3, h4, h5, h6, p, span, a {
   line-height: 30px;
   letter-spacing: 1.5px;
   text-align: center;
+  color: #ffffff;
 }
 
 .paragraph {
