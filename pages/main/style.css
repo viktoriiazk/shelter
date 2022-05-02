@@ -677,6 +677,32 @@ nav .nav-active a {
   margin-bottom: 60px;
 }
 
+.help-wrap {
+  padding-top: 170px;
+}
+.help-wrap .title {
+  text-align: center;
+  max-width: 350px;
+  margin-bottom: 66px;
+}
+.help-wrap .help-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.help-wrap .list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 55px;
+}
+.help-wrap .list-item img {
+  display: block;
+  margin-bottom: 34px;
+}
+.help-wrap .list-item h4 {
+  font-size: 20px;
+}
+
 @media (min-width: 768px) {
   .container {
     padding-right: 30px;
