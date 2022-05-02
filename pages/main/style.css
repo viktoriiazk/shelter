@@ -655,6 +655,15 @@ nav .nav-active a {
 .pets-list-wrap .pets-card span {
   margin-bottom: 30px;
 }
+.pets-list-wrap .pets-card:hover {
+  cursor: pointer;
+}
+.pets-list-wrap .pets-card:hover img {
+  transform: scale(1.2);
+}
+.pets-list-wrap .pets-card:hover .btn {
+  background-color: #FDDCC4;
+}
 .pets-list-wrap .arrow {
   background-image: url("../../assets/icons/Arrow.png");
   height: 52px;
@@ -701,6 +710,40 @@ nav .nav-active a {
 }
 .help-wrap .list-item h4 {
   font-size: 20px;
+}
+
+footer {
+  background: url("../../assets/icons/noise_transparent.png"), radial-gradient(circle at center, #5B483A, #262425), #211F20;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.footer-info h4 {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+.footer-info address {
+  display: flex;
+  flex-direction: column;
+}
+.footer-info address span {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.footer-info address img {
+  display: flex;
+  margin-right: 20px;
+}
+.footer-info address a {
+  font-size: 20px;
+  color: #F1CDB3;
 }
 
 @media (min-width: 768px) {
