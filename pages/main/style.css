@@ -695,14 +695,16 @@ nav .nav-active a {
   margin-bottom: 66px;
 }
 .help-wrap .help-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .help-wrap .list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 55px;
+  min-width: 230px;
 }
 .help-wrap .list-item img {
   display: block;
@@ -744,6 +746,56 @@ footer {
 .footer-info address a {
   font-size: 20px;
   color: #F1CDB3;
+}
+
+.donation-wrap {
+  padding-top: 120px;
+}
+.donation-wrap .donation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.donation-wrap .donation img {
+  margin-right: 30px;
+}
+.donation-wrap .donation-content {
+  max-width: 380px;
+  width: 100%;
+}
+.donation-wrap .donation-content h4 {
+  color: #545454;
+  font-size: 32px;
+  line-height: 44px;
+  max-width: 290px;
+  margin-bottom: 20px;
+}
+.donation-wrap .donation-content span {
+  display: block;
+  margin-bottom: 20px;
+  letter-spacing: 0.6px;
+}
+.donation-wrap .donation-content .credit-card {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #F1CDB3;
+  color: #545454;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.donation-wrap .donation-content .credit-card img {
+  margin-right: 15px;
+}
+.donation-wrap .donation-content .credit-card span {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.donation-wrap .donation-content p {
+  color: #B2B2B2;
+  font-style: italic;
+  font-size: 12px;
+  font-family: "Arial";
 }
 
 @media (min-width: 768px) {
