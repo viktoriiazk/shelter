@@ -791,6 +791,9 @@ footer {
   margin-bottom: 0;
   font-size: 20px;
 }
+.donation-wrap .donation-content .credit-card:hover {
+  background-color: #FDDCC4;
+}
 .donation-wrap .donation-content p {
   color: #B2B2B2;
   font-style: italic;
