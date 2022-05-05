@@ -667,7 +667,40 @@ nav {
     margin-bottom: 166px;
   }
 }
+.our-pets-wrap {
+  background-color: $color-light-l;
+  .pets {
+    .pets-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $color-light-s;
+      border-radius: 10px;
+      padding-bottom: 30px;
+      padding-top: 10px;
 
+      img {
+        margin-bottom: 26px;
+      }
+
+      span {
+        margin-bottom: 30px;
+        letter-spacing: 1.8px;
+        font-size: 20px;
+      }
+    }
+
+    .pets-card:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 17px 0px $color-primary-light;
+
+      .btn {
+        background-color: $color-primary-light;
+
+      }
+    }
+  }
+}
 
 footer {
   background: $footer-gradient-background;
