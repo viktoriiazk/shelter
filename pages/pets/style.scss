@@ -714,6 +714,8 @@ footer {
         font-size: 20px;
         font-style: normal;
         color: $color-primary;
+        display: flex;
+        align-items: center;
       }
     }
   }

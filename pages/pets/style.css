@@ -626,6 +626,8 @@ footer .footer-info address a {
   font-size: 20px;
   font-style: normal;
   color: #F1CDB3;
+  display: flex;
+  align-items: center;
 }
 footer .footer-address address img {
   margin-left: 0;
