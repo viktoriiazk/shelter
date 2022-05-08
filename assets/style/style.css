@@ -847,6 +847,7 @@ nav .nav-active a {
   align-items: center;
 }
 .our-pets-wrap .pets .pets-card {
+  display: none;
   max-width: 270px;
   width: 100%;
   margin: 0 auto;
@@ -862,6 +863,9 @@ nav .nav-active a {
 }
 .our-pets-wrap .pets .pets-card:nth-last-child(1) {
   margin-bottom: 40px;
+}
+.our-pets-wrap .pets .pets-card.pets-active {
+  display: flex;
 }
 .our-pets-wrap .pets .our-pets__arrows {
   display: flex;
