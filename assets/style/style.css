@@ -835,6 +835,7 @@ nav .nav-active a {
 .our-pets-wrap {
   background-color: #f6f6f6;
   padding-top: 42px;
+  padding-bottom: 40px;
 }
 .our-pets-wrap .title {
   max-width: initial;
@@ -858,6 +859,41 @@ nav .nav-active a {
 }
 .our-pets-wrap .pets .pets-card .btn {
   max-width: 180px;
+}
+.our-pets-wrap .pets .pets-card:nth-last-child(1) {
+  margin-bottom: 40px;
+}
+.our-pets-wrap .pets .our-pets__arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.our-pets-wrap .pets .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+}
+.our-pets-wrap .pets .arrow:hover {
+  color: #292929;
+  background-color: #CDCDCD;
+  cursor: pointer;
+}
+.our-pets-wrap .pets .arrow-active {
+  border-color: #F1CDB3;
+  color: #292929;
+}
+.our-pets-wrap .pets .arrow-active:hover {
+  background-color: #F1CDB3;
+}
+.our-pets-wrap .pets .arrow.pagination-number {
+  border-color: #F1CDB3;
+  color: #292929;
+  background-color: #F1CDB3;
 }
 
 footer {
