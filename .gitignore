@@ -1,1 +1,4 @@
-/pages/main/style.scss
+/assets/style/style.scss
+!/pages/pets/style.css.map
+!/pages/pets/style.scss
+!/assets/style/style.css.map

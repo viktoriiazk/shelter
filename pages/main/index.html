@@ -5,24 +5,24 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../assets/style/style.css">
     <title>Shelter | Main</title>
 </head>
 <body>
 <header>
     <div class="container">
         <div class="header">
-            <div class="logo">
+            <a class="logo" href="#">
                 <h1>Cozy House</h1>
                 <span>
                           Shelter for pets in Boston
                     </span>
-            </div>
+            </a>
 
             <nav class="nav-desktop">
                 <ul class="nav">
                     <li class="nav-active"><a href="#about">About the shelter</a></li>
-                    <li><a href="#pets">Our pets</a></li>
+                    <li><a href="../pets/index.html">Our pets</a></li>
                     <li><a href="#help">Help the shelter</a></li>
                     <li><a href="#contacts">Contacts</a></li>
                 </ul>
@@ -43,7 +43,7 @@
                 <nav>
                     <ul>
                         <li class="nav-active"><a href="#about">About the shelter</a></li>
-                        <li><a href="#pets">Our pets</a></li>
+                        <li><a href="../pets/index.html">Our pets</a></li>
                         <li><a href="#help">Help the shelter</a></li>
                         <li><a href="#contacts">Contacts</a></li>
                     </ul>
@@ -95,11 +95,11 @@
         <div class="container">
             <div class="pets">
                 <h3 class="title">
-                    Our friends who
+                    Our friends who <br>
                     are looking for a house
                 </h3>
                 <div class="pets-list-wrap">
-                    <div class="arrow arrow-left"></div>
+
                     <div class="pets-list">
                         <div class="pets-card">
                             <img src="../../assets/images/pets-katrine.png" alt="Katrine">
@@ -117,7 +117,10 @@
                             <a href="#" class="btn">Learn more</a>
                         </div>
                     </div>
-                    <div class="arrow arrow-right"></div>
+                    <div class="pets-list__arrows">
+                        <div class="arrow arrow-left"></div>
+                        <div class="arrow arrow-right"></div>
+                    </div>
 
                 </div>
                 <a href="#pets" class="btn btn-primary">Get to know the rest</a>
@@ -127,7 +130,7 @@
     <section id="help" class="help-wrap">
         <div class="container">
             <div class="help">
-                <h3 class="title">How you can help
+                <h3 class="title">How you can help<br>
                     our shelter</h3>
                 <div class="help-list">
                     <div class="list-item">
@@ -170,12 +173,27 @@
             </div>
         </div>
     </section>
+
     <section class="donation-wrap">
         <div class="container">
-            <div class="donation"></div>
+            <div class="donation">
+                <img src="../../assets/images/donation-dog.png" alt="donation dog">
+                <div class="donation-content">
+                    <h4>You can also<br> make a donation</h4>
+                    <span>Name of the bank / Type of bank account</span>
+                    <a href="javascript:void(0)" class="credit-card">
+                        <img src="../../assets/icons/credit-card.svg" alt="credit card">
+                        <span>
+                        8380 2880 8028 8791 7435
+                    </span>
+                    </a>
+                    <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum
+                        at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate.
+                        Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                </div>
+            </div>
         </div>
     </section>
-
 </main>
 <footer id="contacts">
     <div class="container">
@@ -195,12 +213,11 @@
                     </span>
                 </address>
             </div>
-            <div class="footer-info">
+            <div class="footer-info footer-address">
                 <h4>We are waiting for your visit</h4>
                 <address><span>
                  <img src="../../assets/icons/icon-marker.png" alt="marker icon">
                         <a href="https://goo.gl/maps/iiq6jG2EmRCvA2xb6">1 Central Street, Boston (entrance from the store)</a>
-
             </span>
                     <span><img src="../../assets/icons/icon-marker.png" alt="marker icon">
 
@@ -209,10 +226,10 @@
 
                 </address>
             </div>
-            <img src="../../assets/images/footer-puppy.png" alt="">
+            <img class="footer-puppy" src="../../assets/images/footer-puppy.png" alt="">
         </div>
     </div>
 </footer>
-<script src="script.js"></script>
+<script src="../../assets/script/script.js"></script>
 </body>
 </html>
