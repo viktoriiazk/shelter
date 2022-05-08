@@ -876,16 +876,18 @@ nav .nav-active a {
   width: 52px;
   border-radius: 50%;
   border: 2px solid #CDCDCD;
-  color: #CDCDCD;
 }
 .our-pets-wrap .pets .arrow:hover {
   color: #292929;
-  background-color: #CDCDCD;
   cursor: pointer;
 }
-.our-pets-wrap .pets .arrow-active {
+.our-pets-wrap .pets .arrow[data-disabled=false] {
   border-color: #F1CDB3;
   color: #292929;
+}
+.our-pets-wrap .pets .arrow[data-disabled=true] {
+  border-color: #CDCDCD;
+  color: #CDCDCD;
 }
 .our-pets-wrap .pets .arrow-active:hover {
   background-color: #F1CDB3;

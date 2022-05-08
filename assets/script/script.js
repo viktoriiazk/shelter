@@ -1,10 +1,83 @@
 const mobileMenu = document.getElementById('mobileMenu');
 const burgerMenu = document.getElementById('burgerMenu');
 const openMenu = () => {
-         mobileMenu.classList.toggle('menu-active');
-        burgerMenu.classList.toggle('burger-active');
+    mobileMenu.classList.toggle('menu-active');
+    burgerMenu.classList.toggle('burger-active');
 }
 
 burgerMenu.onclick = openMenu;
 
+const firstPage = document.getElementById('firstPage');
+const prevPage = document.getElementById('prevPage');
+const nextPage = document.getElementById('nextPage');
+const lastPage = document.getElementById('lastPage');
+const pageNumber = document.querySelector('.pagination-number');
+let count = pageNumber.innerHTML;
 
+nextPage.addEventListener("click",()=>{
+    count++;
+    if( count < 5) {
+        nextPage.dataset.disabled = 'false';
+        lastPage.dataset.disabled = 'false';
+        prevPage.dataset.disabled = 'false';
+        firstPage.dataset.disabled = 'false';
+        pageNumber.innerHTML = count;
+
+    } else {
+        count--;
+        nextPage.dataset.disabled = 'true';
+        lastPage.dataset.disabled = 'true';
+        prevPage.dataset.disabled = 'false';
+        firstPage.dataset.disabled = 'false';
+        pageNumber.innerHTML = count;
+
+    }
+
+});
+prevPage.addEventListener("click",()=>{
+    count--;
+
+    if (count > 1) {
+        nextPage.dataset.disabled = 'false';
+        lastPage.dataset.disabled = 'false';
+        prevPage.dataset.disabled = 'false';
+        firstPage.dataset.disabled = 'false';
+        pageNumber.innerHTML = count;
+
+    } else {
+        count++;
+        prevPage.dataset.disabled = 'true';
+        firstPage.dataset.disabled = 'true';
+        nextPage.dataset.disabled = 'false';
+        lastPage.dataset.disabled = 'false';
+        pageNumber.innerHTML = count;
+    }
+});
+firstPage.addEventListener("click",()=>{
+    if (count > 1) {
+        count = 1;
+        nextPage.dataset.disabled = 'false';
+        lastPage.dataset.disabled = 'false';
+        prevPage.dataset.disabled = 'true';
+        firstPage.dataset.disabled = 'true';
+        pageNumber.innerHTML = count;
+
+    } else {
+        count;
+        prevPage.dataset.disabled = 'true';
+        firstPage.dataset.disabled = 'true';
+        nextPage.dataset.disabled = 'false';
+        lastPage.dataset.disabled = 'false';
+        pageNumber.innerHTML = count;
+    }
+});
+lastPage.addEventListener("click",()=>{
+    if (count < 5) {
+        count = 5;
+        nextPage.dataset.disabled = 'true';
+        lastPage.dataset.disabled = 'true';
+        prevPage.dataset.disabled = 'false';
+        firstPage.dataset.disabled = 'false';
+        pageNumber.innerHTML = count;
+    }
+});
