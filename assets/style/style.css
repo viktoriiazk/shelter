@@ -892,6 +892,7 @@ nav .nav-active a {
 .our-pets-wrap .pets .arrow[data-disabled=true] {
   border-color: #CDCDCD;
   color: #CDCDCD;
+  cursor: default;
 }
 .our-pets-wrap .pets .arrow-active:hover {
   background-color: #F1CDB3;
@@ -900,6 +901,7 @@ nav .nav-active a {
   border-color: #F1CDB3;
   color: #292929;
   background-color: #F1CDB3;
+  cursor: default;
 }
 
 footer {
