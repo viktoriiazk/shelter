@@ -881,13 +881,13 @@ nav .nav-active a {
   border-radius: 50%;
   border: 2px solid #CDCDCD;
 }
-.our-pets-wrap .pets .arrow:hover {
-  color: #292929;
-  cursor: pointer;
-}
 .our-pets-wrap .pets .arrow[data-disabled=false] {
   border-color: #F1CDB3;
   color: #292929;
+}
+.our-pets-wrap .pets .arrow[data-disabled=false]:hover {
+  cursor: pointer;
+  background-color: #F1CDB3;
 }
 .our-pets-wrap .pets .arrow[data-disabled=true] {
   border-color: #CDCDCD;
