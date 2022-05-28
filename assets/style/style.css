@@ -558,7 +558,7 @@ header.our-pets nav .nav-active a {
 }
 
 .pets-card {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   background-color: #FAFAFA;
@@ -566,8 +566,11 @@ header.our-pets nav .nav-active a {
   padding-bottom: 30px;
   padding-top: 10px;
 }
+.pets-card:first-child{
+  display: flex;
+}
 .pets-card img {
-  margin-bottom: 26px;
+  margin-bottom: 18px;
 }
 .pets-card span {
   margin-bottom: 30px;
@@ -845,6 +848,7 @@ nav .nav-active a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 10px;
 }
 .our-pets-wrap .pets .pets-card {
   display: none;
@@ -864,9 +868,13 @@ nav .nav-active a {
 .our-pets-wrap .pets .pets-card:nth-last-child(1) {
   margin-bottom: 40px;
 }
-.our-pets-wrap .pets .pets-card.pets-active {
-  display: flex;
+.our-pets-wrap .pets .pets-card:nth-child(-n+3) {
+display: flex;
 }
+  /*.our-pets-wrap .pets .pets-card.pets-active {*/
+/*  display: flex;*/
+/*}*/
+
 .our-pets-wrap .pets .our-pets__arrows {
   display: flex;
   justify-content: space-between;
@@ -1000,7 +1008,7 @@ footer .footer-puppy {
   }
 
   .pets-card img {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 
   .start-screen-wrap .copy {
@@ -1035,6 +1043,12 @@ footer .footer-puppy {
     padding-top: 106px;
     padding-bottom: 104px;
   }
+  .pets-card:nth-child(2){
+    display: flex;
+  }
+  .pets-list {
+    justify-content: space-evenly;
+  }
   .pets-wrap .title {
     text-align: center;
   }
@@ -1047,7 +1061,12 @@ footer .footer-puppy {
     top: 50%;
     transform: translate(0, -50%);
   }
-
+  .our-pets-wrap .pets .pets-card{
+    display: flex;
+  }
+  .our-pets-wrap .pets .pets-card:nth-child(-n+2){
+    display: none;
+  }
   .help-wrap {
     padding-top: 82px;
   }
@@ -1109,6 +1128,7 @@ footer .footer-puppy {
     flex-direction: row;
     margin: 0 46px;
     justify-content: space-evenly;
+    padding-bottom: 0;
   }
   .our-pets-wrap .pets .our-pets__arrows {
     max-width: 348px;
@@ -1191,7 +1211,15 @@ footer .footer-puppy {
   .pets-wrap .pets-list-wrap .pets-list {
     justify-content: space-evenly;
   }
-
+  .pets-card {
+    display: flex;
+  }
+  .our-pets-wrap .pets .pets-card {
+    display: flex;
+  }
+  .our-pets-wrap .pets .pets-card:nth-child(-n+2){
+    display: flex;
+  }
   .help-wrap {
     padding-top: 76px;
   }
